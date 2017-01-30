@@ -1,0 +1,15 @@
+/***************
+General
+***************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, sans-serif;
+  text-align: center;
+}
+
+.source:before {
+  content:  "\2014";
+}
