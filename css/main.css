@@ -7,7 +7,8 @@ General
 
 body {
   font-family: Georgia, sans-serif;
-  text-align: center;
+  background: rgba(76, 0, 238, 1);
+  color: #fff;
 }
 
 .source:before {
@@ -21,3 +22,44 @@ body {
 /***************
 .mainContainer
 ***************/
+.mainContainer {
+  text-align: justify;
+}
+
+@media (min-width: 769px) {
+  .mainContainer {
+    width: 70%;
+    max-width: 400px;
+  }
+}
+
+/***************
+.quoteContainer
+***************/
+.quoteContainer {
+  font-size: 1.5em;
+  padding: 10px;
+  margin-top: 4%;
+}
+
+.newQuote {
+  font-family: Georgia, sans-serif;
+  font-size: 1.1em;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  width: 10em;
+  transition: .5s;
+  cursor: pointer;
+  color: #fff;
+  background: rgba(0, 0, 0, .7);
+  position: fixed;
+  left: 0;
+  top:0;
+}
+
+.newQuote:hover,
+.newQuote:focus {
+  width: 12em;
+}
