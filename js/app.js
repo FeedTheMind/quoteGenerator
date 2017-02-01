@@ -66,7 +66,25 @@ function printRandomQuote() {
 
   quoteCont.innerHTML = quoteString;
 
+  getRandomColor();
+
   randomButton.innerHTML = 'Reveal another.';
+}
+
+function getRandomColor() {
+  // Create array of values
+  const hexadecArray = '0123456789abcdef'.split('');
+  let hexadecValue = '#';
+
+  let i = 0;
+
+  // While i < 6
+  while (i++ < 6) {
+    // Add new value to hexadec
+    hexadecValue += hexadecArray[Math.floor(Math.random() * 16)];
+  }
+
+  randomButton.style.backgroundColor = hexadecValue;
 }
 
 randomButton.addEventListener('click', printRandomQuote);
