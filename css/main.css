@@ -23,14 +23,7 @@ body {
 .mainContainer
 ***************/
 .mainContainer {
-  text-align: justify;
-}
-
-@media (min-width: 769px) {
-  .mainContainer {
-    width: 70%;
-    max-width: 400px;
-  }
+  margin: 0 auto;
 }
 
 /***************
@@ -50,6 +43,7 @@ body {
   border-radius: 5px;
   padding: 5px;
   width: 10em;
+  -webkit-transition: .5s;
   transition: .5s;
   cursor: pointer;
   color: #fff;
@@ -62,4 +56,22 @@ body {
 .newQuote:hover,
 .newQuote:focus {
   width: 12em;
+}
+
+/***************
+Queries
+***************/
+@media (min-width: 769px) {
+  .mainContainer {
+    max-width: 400px;
+  }
+
+  .newQuote {
+    top: 40%;
+    left: 50%;
+  }
+
+  .quoteContainer {
+    font-size: 2em;
+  }
 }
